@@ -147,6 +147,10 @@ nav ul li {
 
 }
 
+#full_menu a {
+  line-height: .8em;
+}
+
 
 #x {
   position: absolute;
@@ -170,7 +174,7 @@ nav ul li {
 
 #full_menu li {
   list-style-type: none;
-  padding: 10px 0;
+  padding: .4em 0;
   font-size: var(--fs-4);
   transition: transform .25s ease;
   transform-origin: left;
