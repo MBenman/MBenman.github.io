@@ -1,9 +1,18 @@
+---
+
+---
+{% assign siteContent = site.static_files | where: "siteContent", true %}
+{% assign image_files = site.static_files | where: "image", true | sort: "weight" %}
+{% assign sorted_projects = site.projects | sort: "order" %}
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Maxwell's Website</title>
+    <link rel="stylesheet" href="{{ site-url }}/assets/css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gkn5bri.css">
+
   </head>
+
   <body>
     <header>
       <nav class="main_menu">
@@ -15,9 +24,9 @@
       </nav>
 
       <div id="full_menu">
-        <a href="javascript:void(0);" onclick="menuClose()"><img src="{{ site.baseurl }}/assets/images/siteContent/x.svg" id="x"></a>
+        <a href="javascript:void(0);" onclick="menuClose()"><img src="{{ site-url }}/assets/images/siteContent/x.svg" id="x"></a>
         <ul>
-          {% for project in projects %}
+          {% for project in site.projects %}
           <li><a href="#{{ project.htmlID }}" onclick="menuClose()">{{ project.title }}</a></li>
           {% endfor %}
         </ul>
@@ -27,5 +36,301 @@
 
     </header>
 
+
+
+    <div id="main_container">
+      <img src="{{ site-url }}/assets/images/siteContent/name_block.svg" alt="" class="name name_block"/>
+
+
+      <img src="{{ site-url }}/assets/images/siteContent/spinner-01.svg" alt="" class="spinner"/>
+
+      <div class="hello">
+        {% for hi in site.about %}
+          <p>{{hi.content}}</p>
+        {% endfor %}
+      </div>
+
+      <div class="pShape pFast">
+        <img src="{{ site-url }}/assets/images/siteContent/pShapes-01.svg" alt="" class="pFast">
+      </div>
+
+
+      {% for project in sorted_projects %}
+
+        <div class="project" id="{{ project.htmlID }}">
+      <!-- Normal Project Template -->
+        {% if project.template == "nor" %}
+            <div class="project_header">
+              <div class="project_title">
+                <h2>{{ project.title }}</h2>
+              </div>
+
+              <span class="project_line"></span>
+
+              <div class="project_info_bar">
+                <div class="project_tech">
+                  <h3>tech:</h3>
+                  {% for t in project.techs %}
+                    <p>{{ t.tech }}</p>
+                  {% endfor %}
+                </div>
+
+                <div class="project_roles">
+                  <h3>roles:</h3>
+                  {% for r in project.roles %}
+                      <p>{{ r.role }}</p>
+                  {% endfor %}
+                </div>
+
+              </div>
+            </div>
+
+            <div class="first_content_container">
+              <div class="first_image">
+                {% for image in image_files %}
+                  {% if image.proj == project.htmlID %}
+                  <img src="{{ image.path }}" alt="" class="skewElem"> 
+                  {% endif %}
+                {% endfor %}
+              </div>
+
+              <div class="project_description pSlow_desc">
+                {{ project.content }}
+              </div>
+
+            </div>
+
+        
+        {% elsif project.template == "big" %}
+            <div class="project_header">
+              <div class="project_title">
+                <h2>{{ project.title }}</h2>
+              </div>
+
+              <span class="project_line"></span>
+
+              <div class="project_info_bar">
+                <div class="project_tech">
+                  <h3>tech:</h3>
+                  {% for t in project.techs %}
+                    <p>{{ t.tech }}</p>
+                  {% endfor %}
+                </div>
+
+                <div class="project_roles">
+                  <h3>roles:</h3>
+                  {% for r in project.roles %}
+                      <p>{{ r.role }}</p>
+                  {% endfor %}
+                </div>
+
+              </div>
+            </div>
+
+            <div class="first_content_container">
+              <div class="first_image">
+                {% for image in image_files %}
+                  {% if image.proj == project.htmlID and image.size != "big" %}
+                  <img src="{{ image.path }}" alt="" class="skewElem"> 
+                  {% endif %}
+                {% endfor %}
+              </div>
+
+              <div class="project_description pSlow_desc">
+                {{ project.content }}
+              </div>
+
+            </div>
+
+            <div class="project_images_big">
+              {% for image in image_files %}
+                {% if image.proj == project.htmlID and image.size == "big" %}
+                <img src="{{ image.path }}" alt="" class="skewElem">
+                {% endif %}
+              {% endfor %}
+            </div>
+
+        {% endif %}
+        </div>
+
+      {% endfor %}
+
+    </div>
+
+
+    <footer>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      var desc = document.getElementsByClassName("project_description");
+
+
+      // adjust spacing
+      // function adjust() {
+      //   for(var i=0; i<desc.length; i++) {
+      //     desc[i].style.marginBottom = desc[i].offsetHeight + "px";
+      //   }
+      //
+      // };
+
+
+      // function menu() {
+      //   var men = document.getElementById("full_menu");
+      //   // var menTl = gsap.timeline();
+      //   // menTl.to("#full_menu", {
+      //   //   opacity: 0,
+      //   //   x: "-100vw",
+      //   //   duration: 1,
+      //   //   ease: "power3",
+      //   // });
+      //   // // menTl.men.style.display = "none";
+      //   // menTl.to("#full_menu", {
+      //   //   x: 0,
+      //   // });
+      //
+      //   if (men.style.display === "block") {
+      //     menTl.play();
+      //
+      //   } else {
+      //     men.style.display = "block";
+      //
+      //     gsap.from("#full_menu", {
+      //       opacity: 0,
+      //       x: "-100vw",
+      //       duration: 1,
+      //       ease: "power3",
+      //     });
+      //   }
+      // }
+
+      function menuOpen() {
+        gsap.to("#full_menu", {
+            opacity: 1,
+            x: "100vw",
+            duration: 1,
+            ease: "power3",
+            });
+      }
+
+
+
+      function menuClose() {
+        gsap.to("#full_menu", {
+          opacity: 0,
+          x: 0,
+          duration: 1,
+          ease: "power3",
+        });
+      }
+
+
+
+
+      // Parallax
+      gsap.to(".pFast", {
+        yPercent: -300,
+        ease: "none",
+        scrollTrigger: {
+          trigger: "body",
+          start: "top top",
+          endTrigger: "name_block",
+          end:"bottom top",
+          scrub: true,
+        },
+      });
+
+
+      gsap.utils.toArray(".pSlow_desc").forEach(desc => {
+        gsap.to(desc, {
+          yPercent: 30,
+          ease: "none",
+          scrollTrigger: {
+            trigger: desc,
+            scrub: true,
+          },
+        });
+      });
+
+
+
+      gsap.to(".spinner", {
+        rotation: 270,
+        scrollTrigger: {
+          trigger:".spinner",
+          start: "bottom bottom",
+          end: "bottom top",
+          scrub: true,
+          ease: "none",
+        },
+
+      });
+
+
+
+
+
+
+      gsap.utils.toArray(".project_title").forEach(project_line => {
+        var tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: project_line,
+            scrub: true,
+            start: "top 80%",
+            end: "top 46%",
+            markers: true,
+          }
+        });
+        tl.from(project_line, {
+          x: "100vw",
+        });
+      });
+
+      // Scroll Pinning
+      // const scrollFrame = gsap.utils.toArray('.project_scroll_frame');
+      // gsap.utils.toArray(".project_pin_frame").forEach(frame => {
+      //   scrollFrame.forEach(sFrame => {
+      //     ScrollTrigger.create({
+      //       trigger: frame,
+      //       start:"top top",
+      //       endTrigger: sFrame,
+      //       end: "top top",
+      //       scrub: true,
+      //       pin: true,
+      //       pinSpacing: false,
+      //       markers: true,
+      //
+      //   })
+      //
+      //   });
+      // });
+
+
+
+
+
+    // let proxy = { skew: 0 },
+    // skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+    // clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees.
+    //
+    // ScrollTrigger.create({
+    //   onUpdate: (self) => {
+    //     let skew = clamp(self.getVelocity() / -300);
+    //     // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    //     if (Math.abs(skew) > Math.abs(proxy.skew)) {
+    //       proxy.skew = skew;
+    //       gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+    //     }
+    //   }
+    // });
+    //
+    // // make the right edge "stick" to the scroll bar. force3D: true improves performance
+    // gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+
+
+
+    </script>
   </body>
 </html>

@@ -1,15 +1,16 @@
 ---
 title: Protect The Pack
 order: 2
-tech:
-    -illustrator
-    -composer
+techs:
+    - tech: illustrator
+    - tech: composer
 roles:
-    -graphic design
-    -client management
-    -layout
+    - role: graphic design
+    - role: client management
+    - role: layout
 year: 2020-2021
-htmlID: signShop
+htmlID: protectThePack
+template: nor
 ---
 This project is a series of signs that I designed in order to engage the Northeastern University community with reminders on how to stay safe while socializing with friends on campus during the age of COVID-19. As a designer in the University Sign Shop, the External Affairs department commissioned me to design these signs for their provided copy.
 

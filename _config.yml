@@ -7,60 +7,61 @@ description: Maxwell Benman is a web, UX, and graphic designer in Boston, MA. He
 environment: development
 
 baseurl: ""
-url: "https://mbenman.github.io"
+url: ""
 
 
 collections:
   - projects
   - image_gallery
+  - about
 
 
 defaults:
   -
     scope:
-      path: "assets/img"
+      path: "assets/images"
     values:
       image: true
   -
     scope:
-      path: "assets/siteContent"
+      path: "assets/images/siteContent"
     values:
       siteContent: true        
   -
     scope:
-      path: "assets/img/sign_shop"
+      path: "assets/images/media/sign_shop"
     values:
-      proj: "sign_shop"
+      proj: "signShop"
   -
     scope:
-      path: "assets/img/protectThePack"
+      path: "assets/images/media/protectThePack"
     values:
       proj: "protectThePack"
   -
     scope:
-      path: "assets/img/betterWeather"
+      path: "assets/images/media/betterWeather"
     values:
       proj: "betterWeather"
   -
     scope:
-      path: "assets/img/NUPR"
+      path: "assets/images/media/NUPR"
     values:
         proj: "NUPR"
   -
     scope:
-      path: "assets/img/resume"
+      path: "assets/images/media/resume"
     values:
-        proj: "resume"
+      proj: "resume"
   -
     scope:
-      path: "assets/img/smartEnergy"
+      path: "assets/images/media/smartEnergy"
     values:
-        proj: "smartEnergy"
+      proj: "smartEnergy"
   -
     scope:
-      path: "assets/img/thisWebsite"
+      path: "assets/images/media/thisWebsite"
     values:
-        proj: "thisWebsite"
+      proj: "thisWebsite"
 
 
 theme: jekyll-theme-minimal
