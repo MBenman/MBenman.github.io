@@ -6,8 +6,8 @@ description: Maxwell Benman is a web, UX, and graphic designer in Boston, MA. He
 
 environment: development
 
-# baseurl: ""
-# url: ""
+baseurl: ""
+url: ""
 
 
 collections:
