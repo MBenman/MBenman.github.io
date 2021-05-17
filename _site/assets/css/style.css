@@ -95,13 +95,11 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1em 0 1em;
-  font-size: var(--fs-2);
-  display: flex;
-
+  margin: 0 .8em 0 .8em;
+  font-size: var(--fs-3);
 }
 
-nav a {
+.highlight_link a {
   background-image:
      linear-gradient(
        to bottom, #dceff4 0%,
@@ -116,20 +114,15 @@ nav a {
 
 }
 
-nav a:hover {
+.highlight_link a:hover {
   background-size: 4px 30px;
 }
 
 
-.contact h2{
+.contact a{
   font-size: var(--fs-3);
-  transition: transform .25s ease;
-  transform-origin: left;
 }
 
-.contact h2:hover {
-  transform:scale(1.25);
-}
 
 
 
@@ -217,7 +210,7 @@ nav a:hover {
 }
 
 .name {
-  width: 500px;
+  width: 300px;
 
 }
 
@@ -245,8 +238,8 @@ nav a:hover {
 .spinner {
   max-width: 200px;
   position: absolute;
-  left: 60%;
-  top: 50%;
+  left: 60vw;
+  top: 50vh;
   opacity: .2;
 }
 
@@ -341,28 +334,6 @@ nav a:hover {
 }
 
 
-@media (min-width: 960px) {
-  .first_content_container {
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 100%;
-    margin-bottom: 150px;
-  }
-
-  .first_image {
-    grid-row-start: 1;
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .project_description {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-bottom: 0px;
-  }
-
-}
-
 .pShape {
   z-index: -99;
   position: relative;
@@ -437,4 +408,36 @@ nav a:hover {
 .contact {
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+
+
+@media (min-width: 960px) {
+
+  nav ul li {
+    margin: 0 1em 0 1em;
+  }
+
+  .first_content_container {
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+    margin-bottom: 150px;
+  }
+
+  .first_image {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .project_description {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-bottom: 0px;
+  }
+
+  .name {
+    width: 500px;
+  }
 }

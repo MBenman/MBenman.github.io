@@ -14,7 +14,7 @@
 
   <body>
     <header>
-      <nav class="main_menu">
+      <nav class="main_menu highlight_link">
         <ul>
           <li id="menuToggle"><a href="javascript:void(0);" onclick="menuOpen()">nifty things</a></li>
           <li><a href="#">about</a></li>
@@ -50,7 +50,7 @@
 
 
     <div id="main_container">
-      <img src="/assets/images/siteContent/name_block.svg" alt="" class="name name_block"/>
+      <img src="/assets/images/siteContent/name_block_v2.svg" alt="" class="name name_block"/>
 
 
       <img src="/assets/images/siteContent/spinner-01.svg" alt="" class="spinner"/>
@@ -830,8 +830,8 @@
               <div class="project_description pSlow_desc">
                 <p>Contact information blurred to prevent spam; please use the link below to get in touch!</p>
 
-                <div class="contact">
-                  <a href="http://www.linkedin.com/in/maxwell-benman"><h2>Contact through LinkedIn</h2></a>
+                <div class="contact highlight_link">
+                  <a href="http://www.linkedin.com/in/maxwell-benman">Contact through LinkedIn</a>
                 </div>
               </div>
 
@@ -988,7 +988,7 @@
       });
 
 
-
+      // spinner
       gsap.to(".spinner", {
         rotation: 270,
         scrollTrigger: {
@@ -1006,20 +1006,34 @@
 
 
 
-      gsap.utils.toArray(".project_title").forEach(project_line => {
+      gsap.utils.toArray(".project_title").forEach(project_title => {
         var tl = gsap.timeline({
           scrollTrigger: {
-            trigger: project_line,
+            trigger: project_title,
             scrub: true,
             start: "top 80%",
             end: "top 46%",
             markers: false,
           }
         });
-        tl.from(project_line, {
+        tl.from(project_title, {
           x: "100vw",
         });
       });
+
+      gsap.utils.toArray(".project_line").forEach(project_line => {
+        gsap.from(project_line, {
+          x: "-100vw",
+          scrollTrigger: {
+            trigger: project_line,
+            scrub: true,
+            start: "top 80%",
+            end: "top 46%",
+          }
+        });
+      });
+
+
 
       // Scroll Pinning
       // const scrollFrame = gsap.utils.toArray('.project_scroll_frame');
