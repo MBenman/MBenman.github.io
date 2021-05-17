@@ -392,7 +392,7 @@ nav ul li {
 }
 
 .full_height_image {
-  height: 95vh;
+  height: 95vmin;
   width: auto;
   display: block;
   margin: auto;
