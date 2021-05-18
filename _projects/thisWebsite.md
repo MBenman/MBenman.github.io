@@ -1,6 +1,6 @@
 ---
 title: This Website
-order: 4
+order: 7
 techs:
     - tech: html/css/js
     - tech: gsap
@@ -16,6 +16,7 @@ roles:
     - role: full stack development
 year: 2021
 htmlID: thisWebsite
+category: web
 template: nor
 ---
 Like what you see? You are currently reading off of a website that I designed and built. It began life on Django with a Postgres database, all pushed to Heroku. In order to increase efficiency, I then transferred the template and content to a Jekyll site hosted through GitHub Pages. 

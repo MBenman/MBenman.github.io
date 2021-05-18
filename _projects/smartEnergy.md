@@ -1,6 +1,6 @@
 ---
 title: Smart Energy
-order: 3
+order: 4
 techs:
     - tech: illustrator
     - tech: inDesign
@@ -11,6 +11,7 @@ roles:
     - role: graphics
 year: 2019
 htmlID: smartEnergy
+category: graphic
 template: big
 ---
 Smart Energy is a public service campaign to de-stigmatize nuclear energy. An overwhelming amount of reliable, peer-reviewed science shows that nuclear is a safe, clean, reliable energy source, but much of the public doesn't know or doesn't believe it.

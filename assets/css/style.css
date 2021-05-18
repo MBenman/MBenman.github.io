@@ -99,7 +99,7 @@ nav ul li {
   font-size: var(--fs-3);
 }
 
-.highlight_link a {
+.highlight, .highlight_link a {
   background-image:
      linear-gradient(
        to bottom, #dceff4 0%,
@@ -114,7 +114,7 @@ nav ul li {
 
 }
 
-.highlight_link a:hover {
+.highlight:hover, .highlight_link a:hover {
   background-size: 4px 30px;
 }
 
@@ -245,6 +245,23 @@ nav ul li {
   left: 60vw;
   top: 50vh;
   opacity: .2;
+}
+
+.topButton {
+  position: fixed;
+  left: 93vw;
+  top: 93vh;
+  z-index: 99;
+}
+
+.topButton a{
+  opacity: .2;
+  font-size: var(--fs-3);
+  transition: transform .25s ease;
+}
+
+.topButton a:hover {
+  transform: scale(1.1);
 }
 
 
