@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="1075" viewBox="0 0 375 1075">
+  <defs>
+    <clipPath id="clip-iPhone_X_XS_11_Pro_3">
+      <rect width="375" height="1075"/>
+    </clipPath>
+  </defs>
+  <g id="iPhone_X_XS_11_Pro_3" data-name="iPhone X/XS/11 Pro – 3" clip-path="url(#clip-iPhone_X_XS_11_Pro_3)">
+    <rect width="375" height="1075" fill="#fff"/>
+    <text id="_1" data-name="1" transform="translate(288 832)" fill="#e4e4e4" font-size="147" font-family="Usual-Regular, Usual"><tspan x="0" y="0">1</tspan></text>
+    <text id="Maxwell_Benman" data-name="Maxwell 
+Benman" transform="translate(-5 184)" font-size="69" font-family="Usual-Regular, Usual"><tspan x="0" y="0">Maxwell </tspan><tspan x="0" y="72">Benman</tspan></text>
+    <text id="Graphic_Web_UX" data-name="Graphic
+Web
+UX" transform="translate(151 374)" font-size="57" font-family="Usual-Regular, Usual"><tspan x="0" y="0">Graphic</tspan><tspan x="0" y="70">Web</tspan><tspan x="0" y="140">UX</tspan></text>
+    <text id="Design" transform="translate(135 517) rotate(-90)" font-size="54" font-family="Usual-Regular, Usual"><tspan x="0" y="0">Design</tspan></text>
+    <text id="better_weather_" data-name="better weather
+" transform="translate(15 700)" font-size="22" font-family="Usual-Regular, Usual"><tspan x="0" y="0">better weather</tspan><tspan x="0" y="22"></tspan></text>
+    <text id="roles:_web_design_full_stack_development_brand_identity_graphics_" data-name="roles:
+web design
+full stack development
+brand identity
+graphics
+" transform="translate(15 741)" font-size="15" font-family="Usual-Light, Usual" font-weight="300"><tspan x="0" y="0">roles:</tspan><tspan x="0" y="17">web design</tspan><tspan x="0" y="34">full stack development</tspan><tspan x="0" y="51">brand identity</tspan><tspan x="0" y="68">graphics</tspan><tspan x="0" y="85"></tspan></text>
+    <text id="tech:_HTML_CSS_JS_django_python_pandas_plotly_" data-name="tech:
+HTML/CSS/JS
+django
+python
+pandas
+plotly
+
+" transform="translate(203 741)" font-size="15" font-family="Usual-Light, Usual" font-weight="300"><tspan x="0" y="0">tech:</tspan><tspan x="0" y="17">HTML/CSS/JS</tspan><tspan x="0" y="34">django</tspan><tspan x="0" y="51">python</tspan><tspan x="0" y="68">pandas</tspan><tspan x="0" y="85">plotly</tspan><tspan x="0" y="102"></tspan><tspan x="0" y="119"></tspan></text>
+    <path id="Path_1" data-name="Path 1" d="M1990,641.2h345" transform="translate(-1975 68)" stroke="#848484" stroke-width="1"/>
+    <text id="nifty_things" data-name="nifty things" transform="translate(12 38)" font-size="20" font-family="Usual-Regular, Usual"><tspan x="0" y="0">nifty things</tspan></text>
+    <text id="about" transform="translate(171 38)" font-size="20" font-family="Usual-Regular, Usual"><tspan x="0" y="0">about</tspan></text>
+    <line id="Line_4" data-name="Line 4" x2="375" transform="translate(0.5 53.618)" fill="none" stroke="#707070" stroke-width="1"/>
+    <text id="contact" transform="translate(283 38)" font-size="20" font-family="Usual-Regular, Usual"><tspan x="0" y="0">contact</tspan></text>
+  </g>
+</svg>

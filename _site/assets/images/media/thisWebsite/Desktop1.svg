@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" clip-path="url(#clip-Web_1920_2)">
+    <rect width="1920" height="1080" fill="#fff"/>
+    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(674)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="701" height="1080" stroke="none"/>
+      <rect x="0.5" y="0.5" width="700" height="1079" fill="none"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(431)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="243" height="1080" stroke="none"/>
+      <rect x="0.5" y="0.5" width="242" height="1079" fill="none"/>
+    </g>
+    <text id="This_is_a_piece_that_I_made_for_the_XYZ_corporation_s_ABC_Event_improving_synergistic_solutions_for...." data-name="This is a piece that I made for the XYZ corporation&apos;s ABC Event, improving synergistic solutions for...." transform="translate(431 270)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">This is a piece that I made </tspan><tspan x="0" y="49">for the XYZ corporation&apos;s </tspan><tspan x="0" y="76">ABC Event, improving </tspan><tspan x="0" y="103">synergistic solutions for....</tspan></text>
+    <text id="fixed_on_scroll" data-name="fixed on scroll" transform="translate(495 111)" fill="#707070" font-size="20" font-family="Papyrus-Regular, Papyrus"><tspan x="0" y="21">fixed on scroll</tspan></text>
+    <text id="Content_Scrolls" data-name="Content Scrolls" transform="translate(919 147)" fill="#707070" font-size="20" font-family="Papyrus-Regular, Papyrus"><tspan x="0" y="21">Content Scrolls</tspan></text>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(674 197)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="574" height="488" stroke="none"/>
+      <rect x="0.5" y="0.5" width="573" height="487" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(384)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="47" height="1080" stroke="none"/>
+      <rect x="0.5" y="0.5" width="46" height="1079" fill="none"/>
+    </g>
+    <text id="Menu" transform="translate(416 79) rotate(-90)" fill="#707070" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Menu</tspan></text>
+    <text id="Infographic_Flow_Chart" data-name="Infographic Flow Chart" transform="translate(659 229) rotate(-90)" fill="#707070" font-size="20" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Infographic Flow Chart</tspan></text>
+  </g>
+</svg>

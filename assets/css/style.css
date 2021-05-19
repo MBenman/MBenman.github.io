@@ -77,6 +77,8 @@ a {
 
 }
 
+/* Navigation */
+
 .main_menu ul{
   position: fixed;
   top: 0;
@@ -195,6 +197,7 @@ nav ul li {
 }
 
 
+/* Main Content */
 
 #main_container {
     /* max-width: 1600px;
@@ -320,6 +323,7 @@ nav ul li {
   margin-bottom: 150px;
 }
 
+/* Images */
 
 .first_image {
   grid-row-start: 2;
@@ -342,8 +346,16 @@ nav ul li {
   transform:scale(1.5);
 }
 
+.first_image .halfDouble {
+  max-width: 200px;
+}
+
+.first_image .halfDouble:hover {
+  transform:scale(2);
+}
 
 
+/* Project Description */
 
 .project_description {
   grid-row-start: 1;

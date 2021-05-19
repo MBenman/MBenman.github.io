@@ -61,6 +61,7 @@
       {% for project in sorted_projects %}
 
         <div class="project" id="{{ project.htmlID }}">
+
       <!-- Normal Project Template -->
         {% if project.template == "nor" %}
             <div class="project_header">
@@ -94,9 +95,16 @@
 
             <div class="first_content_container">
               <div class="first_image">
+                <!-- Run through all of the images -->
                 {% for image in image_files %}
+                <!-- ONLY post the images for this project-->
                   {% if image.proj == project.htmlID %}
-                  <img src="{{ image.image_path }}" alt="" class="skewElem"> 
+                  <!-- scale properly if this attribute is on the image -->
+                    {% if image.scale == "halfDouble" %}
+                      <img src="{{ image.image_path }}" alt="" class="skewElem halfDouble"> 
+                    {% else %}
+                      <img src="{{ image.image_path }}" alt="" class="skewElem"> 
+                    {% endif %}
                   {% endif %}
                 {% endfor %}
               </div>
@@ -142,7 +150,11 @@
               <div class="first_image">
                 {% for image in image_files %}
                   {% if image.proj == project.htmlID and image.size != "big" %}
-                  <img src="{{ image.image_path }}" alt="" class="skewElem"> 
+                    {% if image.scale == "halfDouble" %}
+                        <img src="{{ image.image_path }}" alt="" class="skewElem halfDouble"> 
+                      {% else %}
+                        <img src="{{ image.image_path }}" alt="" class="skewElem"> 
+                      {% endif %}
                   {% endif %}
                 {% endfor %}
               </div>
