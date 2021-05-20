@@ -12,6 +12,15 @@
 
     <link rel="stylesheet" href="{{ site-url }}/assets/css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/gkn5bri.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/siteContent/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/siteContent/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/siteContent/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/siteContent/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/siteContent/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/siteContent/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-config" content="/assets/images/siteContent/browserconfig.xml">
+    <meta name="theme-color" content="#f9f9f9">
 
   </head>
 
@@ -101,9 +110,9 @@
                   {% if image.proj == project.htmlID %}
                   <!-- scale properly if this attribute is on the image -->
                     {% if image.scale == "halfDouble" %}
-                      <img src="{{ image.image_path }}" alt="" class="skewElem halfDouble"> 
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
                     {% else %}
-                      <img src="{{ image.image_path }}" alt="" class="skewElem"> 
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem"> 
                     {% endif %}
                   {% endif %}
                 {% endfor %}
@@ -151,9 +160,9 @@
                 {% for image in image_files %}
                   {% if image.proj == project.htmlID and image.size != "big" %}
                     {% if image.scale == "halfDouble" %}
-                        <img src="{{ image.image_path }}" alt="" class="skewElem halfDouble"> 
+                        <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
                       {% else %}
-                        <img src="{{ image.image_path }}" alt="" class="skewElem"> 
+                        <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem"> 
                       {% endif %}
                   {% endif %}
                 {% endfor %}
@@ -168,7 +177,7 @@
             <div class="project_images_big">
               {% for image in image_files %}
                 {% if image.proj == project.htmlID and image.size == "big" %}
-                <img src="{{ image.image_path }}" alt="" class="skewElem">
+                <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem">
                 {% endif %}
               {% endfor %}
             </div>
@@ -203,7 +212,7 @@
             <div class="full_height_image">
               {% for image in image_files %}
                 {% if image.proj == project.htmlID and image.size == "big" %}
-                <img src="{{ image.image_path }}" alt="" class="skewElem">
+                <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem">
                 {% endif %}
               {% endfor %}
             </div>
