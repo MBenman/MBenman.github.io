@@ -1,7 +1,7 @@
 ---
 
 ---
-Hi, I'm Maxwell. I like to team up with people to create nifty things that make people smile. I achieve that by blending technologies, hopping between design and development, and making sure everything has just the right spark for the task. I pride myself on having a broad, versatile skill set, and I'm as happy wielding a mouse and keyboard as I am a drill or soldering iron.
+Hi, I'm Maxwell. I love to team up with people to create nifty things that make people smile. I achieve that by blending technologies, hopping between design and development, and making sure everything has just the right spark for the task. I'm just as happy wielding the pen tool as I am a soldering iron or a pivot table, and I'm always looking for new tools to learn.
 
 I'm looking to join a fast-paced, mission-driven team that values great work in all aspects—one that values innovative products, but also healthy team dynamics, efficient collaboration, and constructive communication.
 

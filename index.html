@@ -38,7 +38,9 @@
         <a href="javascript:void(0);" onclick="menuClose()"><img src="{{ site-url }}/assets/images/siteContent/x.svg" id="x"></a>
         <ul>
           {% for project in site.projects %}
-          <li><a href="#{{ project.htmlID }}" onclick="menuClose()" class="{{ project.category }}">{{ project.title }}</a></li>
+            {% if project.hide != true %}
+          <li><a href="#{{ project.htmlID }}" onclick="menuClose()" class="{{ project.category }}">{{ project.title }}</a></li> 
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
@@ -72,7 +74,7 @@
         <div class="project" id="{{ project.htmlID }}">
 
       <!-- Normal Project Template -->
-        {% if project.template == "nor" %}
+        {% if project.template == "nor" and project.hide != "true" %}
             <div class="project_header">
               <div class="project_title">
                 <h2>{{ project.title }}</h2>
@@ -125,7 +127,7 @@
             </div>
 
         
-        {% elsif project.template == "big" %}
+        {% elsif project.template == "big" and project.hide != true %}
             <div class="project_header">
               <div class="project_title">
                 <h2>{{ project.title }}</h2>
@@ -182,7 +184,7 @@
               {% endfor %}
             </div>
 
-        {% elsif project.template == "res" %}
+        {% elsif project.template == "res" and project.hide != "true" %}
             <div class="project_header">
               <div class="project_title">
                 <h2>{{ project.title }}</h2>
