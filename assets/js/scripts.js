@@ -1,142 +1,21 @@
-// wait until DOM is ready (html and svg markup)
-document.addEventListener("DOMContentLoaded", function(event) {
-  
-    // wait until window is loaded (images, external JS, external stylesheets, fonts, links, and other media assets)
-    window.addEventListener("load", function(event) {
-  
-      // makes sure it runs after last render tick
-      window.requestAnimationFrame(function() {
-        
-          // GSAP custom code goes here
-          gsap.registerPlugin(ScrollTrigger);
 
-          var desc = document.getElementsByClassName("project_description");
+// const preloader = document.querySelector('.preloader');
 
 
-            // adjust spacing
-            // function adjust() {
-            //   for(var i=0; i<desc.length; i++) {
-            //     desc[i].style.marginBottom = desc[i].offsetHeight + "px";
-            //   }
-            //
-            // };
+// window.addEventListener('load', loaderAnim());
+
+// var box1Width = document.getElementById("loadBox1").offsetWidth;
+// var box2Width = document.getElementById("loadBox2").offsetWidth;
+// console.log(box1Width);
+
+// function loaderAnim() {
+//     var tl = gsap.timeline();
+//         tl.to("#loadBox1", {
+//         x: "200px",
+//         });
+// }
 
 
-
-            function ux() {
-
-            }
-
-            function web() {
-
-            }
-
-            function graphic() {
-
-            }
-
-            function data() {
-
-            }
-
-            function menuOpen() {
-                gsap.to("#full_menu", {
-                    opacity: 1,
-                    x: "100vw",
-                    duration: 1,
-                    ease: "power3",
-                    });
-            }
-
-
-
-            function menuClose() {
-                gsap.to("#full_menu", {
-                opacity: 0,
-                x: 0,
-                duration: 1,
-                ease: "power3",
-                });
-            }
-
-
-
-
-            // Parallax
-            gsap.to(".pFast", {
-                yPercent: -300,
-                ease: "none",
-                scrollTrigger: {
-                trigger: "body",
-                start: "top top",
-                endTrigger: "name_block",
-                end:"bottom top",
-                scrub: true,
-                },
-            });
-
-
-            gsap.utils.toArray(".pSlow_desc").forEach(desc => {
-                gsap.to(desc, {
-                yPercent: 30,
-                ease: "none",
-                scrollTrigger: {
-                    trigger: desc,
-                    scrub: true,
-                },
-                });
-            });
-
-
-            // spinner
-            gsap.to(".spinner", {
-                rotation: 270,
-                scrollTrigger: {
-                trigger:".spinner",
-                start: "bottom bottom",
-                end: "bottom top",
-                scrub: true,
-                ease: "none",
-                },
-
-            });
-
-
-
-
-
-
-            gsap.utils.toArray(".project_title").forEach(project_title => {
-                var tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: project_title,
-                    scrub: true,
-                    start: "top 90%",
-                    end: "top 35%",
-                    markers: false,
-                }
-                });
-                tl.from(project_title, {
-                x: "100vw",
-                });
-            });
-
-            gsap.utils.toArray(".project_line").forEach(project_line => {
-                gsap.from(project_line, {
-                x: "-100vw",
-                scrollTrigger: {
-                    trigger: project_line,
-                    scrub: true,
-                    start: "top 90%",
-                    end: "top 35%",
-                }
-                });
-            });
-        
-      });
-      
-    });
-});
 
 
 
