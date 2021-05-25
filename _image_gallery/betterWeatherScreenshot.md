@@ -4,4 +4,5 @@ title: Better Weather Screenshot
 weight: 4
 size: small
 proj: betterWeather
+gallery: true
 ---

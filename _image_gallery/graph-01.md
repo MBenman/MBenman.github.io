@@ -4,4 +4,5 @@ title: Graph 1
 weight: 5
 size: small
 proj: betterWeather
+gallery: true
 ---

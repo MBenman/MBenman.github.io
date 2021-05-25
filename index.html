@@ -207,7 +207,7 @@
                 <!-- Run through all of the images -->
                 {% for image in image_files %}
                 <!-- ONLY post the images for this project-->
-                  {% if image.proj == project.htmlID %}
+                  {% if image.proj == project.htmlID and image.gallery != true %}
                   <!-- scale properly if this attribute is on the image -->
                     {% if image.scale == "halfDouble" %}
                       <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
@@ -221,6 +221,22 @@
               <div class="project_description pSlow_desc">
                 {{ project.content }}
               </div>
+
+            </div>
+
+            <div class="project_images">
+              <!-- Run through all of the images -->
+              {% for image in image_files %}
+              <!-- ONLY post the images for this project-->
+                {% if image.proj == project.htmlID and image.gallery == true %}
+                <!-- scale properly if this attribute is on the image -->
+                  {% if image.scale == "halfDouble" %}
+                    <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
+                  {% else %}
+                    <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem"> 
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
 
             </div>
 
@@ -362,6 +378,7 @@
                   }
       // wait until DOM is ready (html and svg markup)
       document.addEventListener("DOMContentLoaded", function(event) {
+
         
           // wait until window is loaded (images, external JS, external stylesheets, fonts, links, and other media assets)
           window.addEventListener("load", function(event) {
