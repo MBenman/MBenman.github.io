@@ -4,5 +4,6 @@ title: Visiting Womens Entry
 weight: 6
 proj: signShop
 gallery: true
+size: large
 ---
 

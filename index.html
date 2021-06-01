@@ -231,9 +231,25 @@
                 {% if image.proj == project.htmlID and image.gallery == true %}
                 <!-- scale properly if this attribute is on the image -->
                   {% if image.scale == "halfDouble" %}
-                    <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
+                    
+                    {% if image.size == "small" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_small"> 
+                    {% elsif image.size == "large" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_large"> 
+                    {% else %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_med"> 
+                    {% endif %}
+                  
                   {% else %}
-                    <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem"> 
+
+                    {% if image.size == "small" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_small"> 
+                    {% elsif image.size == "large" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_large"> 
+                    {% else %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_med"> 
+                    {% endif %}
+
                   {% endif %}
                 {% endif %}
               {% endfor %}
@@ -274,7 +290,7 @@
             <div class="first_content_container">
               <div class="first_image">
                 {% for image in image_files %}
-                  {% if image.proj == project.htmlID and image.size != "big" %}
+                  {% if image.proj == project.htmlID and image.size != "huge" %}
                     {% if image.scale == "halfDouble" %}
                         <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
                       {% else %}
@@ -290,9 +306,9 @@
 
             </div>
 
-            <div class="project_images_big">
+            <div class="project_images_huge">
               {% for image in image_files %}
-                {% if image.proj == project.htmlID and image.size == "big" %}
+                {% if image.proj == project.htmlID and image.size == "huge" %}
                 <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem">
                 {% endif %}
               {% endfor %}
@@ -327,7 +343,7 @@
 
             <div class="full_height_image">
               {% for image in image_files %}
-                {% if image.proj == project.htmlID and image.size == "big" %}
+                {% if image.proj == project.htmlID and image.size == "huge" %}
                 <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem">
                 {% endif %}
               {% endfor %}
