@@ -193,7 +193,7 @@ nav ul li {
 #full_menu li {
   list-style-type: none;
   padding: .4em 0;
-  font-size: var(--fs-4);
+  font-size: 2.3rem;
   transition: transform .25s ease;
   transform-origin: left;
 }
