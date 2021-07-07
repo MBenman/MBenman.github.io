@@ -117,7 +117,7 @@ nav ul li {
   font-size: var(--fs-3);
 }
 
-.highlight, .highlight_link a {
+.highlight, .highlight_link a, a {
   background-image:
      linear-gradient(
        to bottom, #dceff4 0%,
@@ -132,7 +132,7 @@ nav ul li {
 
 }
 
-.highlight:hover, .highlight_link a:hover {
+.highlight:hover, .highlight_link a:hover, a:hover {
   background-size: 4px 30px;
 }
 

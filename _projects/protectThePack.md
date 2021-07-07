@@ -19,4 +19,4 @@ The goal of the project was to design fun, striking, vibrant signs that fit the 
 
 I collaborated with the External Affairs' design team to iterate and refine these designs, while respecting the campaign and University brand guidelines.
 
-In order to create signs that professionally represented the campus of 27,000+ students, I designed along with the guidelines of two brand books: one for the University at large, and one for Athletics Department-specific material.
+The #ProtectThePack marketing campaign won the Circle of Excellence [Grand Gold Award](https://www.case.org/awards/circle-excellence/2021/covid-19-response-marketing-campaign-protect-pack) from the Council for Advancement and Support of Education.
