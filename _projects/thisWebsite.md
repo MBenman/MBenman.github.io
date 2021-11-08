@@ -1,6 +1,6 @@
 ---
 title: This Website
-order: 5
+order: 3
 techs:
     - tech: html/css/js
     - tech: gsap
