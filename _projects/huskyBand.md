@@ -1,6 +1,6 @@
 ---
 title: Husky Band
-order: 5
+order: 7
 techs:
     - tech: illustrator
     - tech: xd

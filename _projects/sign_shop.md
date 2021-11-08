@@ -1,6 +1,6 @@
 ---
 title: Northeastern University Sign Shop
-order: 1
+order: 2
 techs:
     - tech: illustrator
     - tech: xd

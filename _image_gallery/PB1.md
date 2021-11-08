@@ -1,6 +1,6 @@
 ---
 image_path: /assets/images/media/photography/PB1.jpg
-title: Glass
+title: photo of Glass.
 weight: 2
 size: med
 proj: photography

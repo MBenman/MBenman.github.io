@@ -1,6 +1,6 @@
 ---
 title: Protect The Pack
-order: 2
+order: 1
 techs:
     - tech: illustrator
     - tech: composer

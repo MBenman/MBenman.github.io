@@ -1,6 +1,6 @@
 ---
 image_path: /assets/images/media/photography/PB4.jpg
-title: O
+title: abstract photo of an O.
 weight: 11
 size: med
 proj: photography
