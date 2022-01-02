@@ -76,7 +76,7 @@ p {
   font-weight: 500;
   font-style: normal;
   font-size: var(--fs-1);
-  line-height: 1.5rem;
+  line-height: 1.75;
 }
 
 ul {
@@ -264,6 +264,7 @@ nav ul li {
 
 .hello  p {
   font-size: var(--fs-3);
+  line-height: 1.25;
 
 }
 
