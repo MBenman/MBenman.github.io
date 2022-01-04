@@ -18,7 +18,7 @@ roles:
     - role: graphics
 year: work in progress
 htmlID: betterWeather
-category: data
+category: web
 template: nor
 ---
 Better Weather is the working title for a web app that helps users find locations that have their favorite climate conditions. Weather and climate are personal preferences that vary widely. Some people love a healthy snowfall every year, while others don't enjoy a temperature dip below 70F.

@@ -1,6 +1,6 @@
 ---
 title: Smart Energy
-order: 4
+order: 6
 techs:
     - tech: illustrator
     - tech: inDesign

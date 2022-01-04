@@ -1,6 +1,6 @@
 ---
 title: Data Visualizations
-order: 6
+order: 7
 techs:
     - tech: illustrator
     - tech: excel

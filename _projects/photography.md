@@ -1,6 +1,6 @@
 ---
 title: Photography
-order: 9
+order: 8
 techs:
     - tech: DSLR
     - tech: Lightroom

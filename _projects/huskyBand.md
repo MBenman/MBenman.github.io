@@ -12,6 +12,7 @@ year: 2019
 htmlID: huskyBand
 category: ux
 template: big
+hide: true
 ---
 Husky Band is a User Experience exploration focused on improving the unnecessarily complicated process of accessing on-campus apartments at Northeastern University. The (pre-COVID) process involved removing and tapping one's Husky Card (student ID card) up to four times in order to reach one’s bedroom, with PIN entry twice required, as well as a handoff to the proctor for picture identification. COVID protocols forced the University to remove this last requirement, but the entire process still remains time-consuming and awkward, especially when one is carrying in groceries, large packages, etc.
 
