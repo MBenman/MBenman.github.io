@@ -467,6 +467,14 @@ nav ul li {
   transform:scale(1);
 }
 
+.halfDouble {
+  max-width: 200px;
+}
+
+.halfDouble:hover {
+  transform:scale(1.5);
+}
+
 
 
 .full_height_image {
