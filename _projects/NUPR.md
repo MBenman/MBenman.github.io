@@ -1,6 +1,6 @@
 ---
 title: Northeastern University Political Review Magazine
-order: 8
+order: 77
 techs:
     - tech: indesign
     - tech: photoshop
