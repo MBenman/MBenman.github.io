@@ -5,4 +5,5 @@ weight: 2
 size: small
 proj: naBeer
 scale: halfDouble
+border: true
 ---

@@ -4,4 +4,5 @@ title: desktop wireframe of na beer website
 weight: 1
 size: small
 proj: naBeer
+border: true
 ---

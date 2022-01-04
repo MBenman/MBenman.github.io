@@ -492,6 +492,10 @@ nav ul li {
   margin-bottom: 100px;
 }
 
+.image_border {
+  border: .5px solid #cccccc;
+}
+
 
 
 @media (min-width: 960px) {

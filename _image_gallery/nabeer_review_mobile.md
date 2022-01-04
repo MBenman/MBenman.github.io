@@ -6,4 +6,5 @@ size: small
 proj: naBeer
 scale: halfDouble
 gallery: true
+border: true
 ---

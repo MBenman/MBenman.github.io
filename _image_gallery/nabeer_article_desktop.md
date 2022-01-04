@@ -5,4 +5,5 @@ weight: 5
 size: large
 proj: naBeer
 gallery: true
+border: true
 ---

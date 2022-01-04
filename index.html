@@ -214,10 +214,14 @@
                 <!-- ONLY post the images for this project-->
                   {% if image.proj == project.htmlID and image.gallery != true %}
                   <!-- scale properly if this attribute is on the image -->
-                    {% if image.scale == "halfDouble" %}
-                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble"> 
+                    {% if image.scale == "halfDouble" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble image_border"> 
+                    {% elsif image.scale == "halfDouble" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble">
+                    {% elsif image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem image_border">
                     {% else %}
-                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem"> 
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem">  
                     {% endif %}
                   {% endif %}
                 {% endfor %}
@@ -237,20 +241,32 @@
                 <!-- scale properly if this attribute is on the image -->
                   {% if image.scale == "halfDouble" %}
                     
-                    {% if image.size == "small" %}
-                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_small"> 
+                    {% if image.size == "small" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_small image_border">
+                    {% elsif image.size == "small" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_small">  
+                    {% elsif image.size == "large" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_large image_border"> 
                     {% elsif image.size == "large" %}
                       <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_large"> 
+                    {% elsif image.size =="med" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_med image_border"> 
                     {% else %}
                       <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem halfDouble project_images_med"> 
                     {% endif %}
                   
                   {% else %}
 
-                    {% if image.size == "small" %}
-                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_small"> 
+                    {% if image.size == "small" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_small image_border">
+                    {% elsif image.size == "small" %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_small">  
+                    {% elsif image.size == "large" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_large image_border"> 
                     {% elsif image.size == "large" %}
                       <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_large"> 
+                    {% elsif image.size =="med" and image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_med image_border"> 
                     {% else %}
                       <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem project_images_med"> 
                     {% endif %}
