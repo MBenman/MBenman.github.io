@@ -307,28 +307,30 @@
               </div>
             </div>
 
-            <div class="slideshow-container">
-              {% for image in image_files %}
-                {% if image.proj == project.htmlID %}
-                  <div class="mySlides fade">
-                    {% if image.border == true %}
-                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem image_border" style="width:100%">
-                    {% else %}
-                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem" style="width:100%">  
-                    {% endif %}
-                  </div>
-                {% endif %}
-              {% endfor %}
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+            <div class="first_content_container">
+              <div class="slideshow-container">
+                {% for image in image_files %}
+                  {% if image.proj == project.htmlID %}
+                    <div class="mySlides fade">
+                      {% if image.border == true %}
+                        <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem image_border" style="width:100%">
+                      {% else %}
+                        <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem" style="width:100%">  
+                      {% endif %}
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
 
 
               <div class="project_description pSlow_desc">
                 {{ project.content }}
               </div>
-
             </div>
+
+            
 
         
 
