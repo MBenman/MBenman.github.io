@@ -14,7 +14,7 @@ roles:
 year: 2020-2021
 htmlID: signShop
 category: graphic
-template: nor
+template: slide
 ---
 At the Northeastern Sign Shop, I designed and produced a variety of signs to satisfy the diverse needs of the campus’ broad client base. The Sign Shop team and I developed—from concept to delivery—directional signage, signs to support the COVID-19 Testing Center operations, social-distancing PSAs, and informational signage. The COVID-19 signage, specifically, contributed to the University’s success in seeing its 27,000+ students through a full school year even in the midst of a global pandemic.
 

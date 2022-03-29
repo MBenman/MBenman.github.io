@@ -276,8 +276,63 @@
               {% endfor %}
 
             </div>
+        
+          {% elsif project.template == "slide" and project.hide != "true" %}
+            <div class="project_header">
+              <div class="project_title">
+                <h2>{{ project.title }}</h2>
+              </div>
+
+              <span class="project_line"></span>
+
+              <div class="project_info_bar">
+                <div class="project_tech">
+                  <h3>tech:</h3>
+                  {% for t in project.techs %}
+                    <p>{{ t.tech }}</p>
+                  {% endfor %}
+                </div>
+
+                <div class="project_roles">
+                  <h3>roles:</h3>
+                  {% for r in project.roles %}
+                      <p>{{ r.role }}</p>
+                  {% endfor %}
+                </div>
+
+                <div class="project_year">
+                      <h3>{{ project.year }}</h3>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="slideshow-container">
+              {% for image in image_files %}
+                {% if image.proj == project.htmlID %}
+                  <div class="mySlides fade">
+                    {% if image.border == true %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem image_border" style="width:100%">
+                    {% else %}
+                      <img src="{{ image.image_path }}" alt="{{ image.title }}" class="skewElem" style="width:100%">  
+                    {% endif %}
+                  </div>
+                {% endif %}
+              {% endfor %}
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+
+              <div class="project_description pSlow_desc">
+                {{ project.content }}
+              </div>
+
+            </div>
 
         
+
+        <!-- Big Project Template -->
         {% elsif project.template == "big" and project.hide != true %}
             <div class="project_header">
               <div class="project_title">
@@ -345,7 +400,6 @@
 
               <div class="project_info_bar">
                 
-
               </div>
             </div>
 
@@ -392,8 +446,35 @@
     <script type="text/javascript">
     gsap.registerPlugin(ScrollTrigger);
 
-    
+    //Slider Functionality
 
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+      } 
+
+    
+    //GSAP Functionality
     function menuOpen() {
                       gsap.to("#full_menu", {
                           opacity: 1,
