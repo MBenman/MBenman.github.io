@@ -389,7 +389,7 @@ nav ul li {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 400px;
+  max-width: 600px;
   position: relative;
   margin: auto;
 }
@@ -397,6 +397,10 @@ nav ul li {
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  width: 600px;
 }
 
 /* Next & previous buttons */
