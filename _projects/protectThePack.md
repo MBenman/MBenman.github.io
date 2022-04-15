@@ -11,7 +11,7 @@ roles:
 year: 2020-2021
 htmlID: protectThePack
 category: graphic
-template: nor
+template: slide
 hide: true
 ---
 This project is a series of signs that I designed in order to engage the Northeastern University community with reminders on how to stay safe while socializing with friends on campus during the age of COVID-19. As a designer in the University Sign Shop, the External Affairs department commissioned me to design these signs for their provided copy.

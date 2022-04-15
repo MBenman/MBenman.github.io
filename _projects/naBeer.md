@@ -12,7 +12,7 @@ roles:
 year: work in progress
 htmlID: naBeer
 category: web
-template: nor
+template: slide
 ---
 NA Beer (working title) is a web project I'm building that helps people find non-alcoholic beer that they'll love. The craft non-alcoholic beer market has seen explosive growth in the past few years, yet there's still a dearth of review sites that explore the beverage and help people navigate the ever-growing options on the shelf. This is particularly frustrating for the many people that may be switching to drinking craft non-alcoholic beers from the "regular" craft beer space for the first time (either as a partial or full replacement), and may be unfamiliar with most of the brands.
 

@@ -17,7 +17,7 @@ roles:
 year: 2021
 htmlID: thisWebsite
 category: web
-template: nor
+template: slide
 ---
 Like what you see? You are currently reading off of a website that I designed and built. It began life on Django with a Postgres database, all pushed to Heroku. In order to increase efficiency, I then transferred the template and content to a Jekyll site hosted through GitHub Pages. 
 

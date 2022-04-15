@@ -21,7 +21,7 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="msapplication-config" content="/assets/images/siteContent/browserconfig.xml">
     <meta name="theme-color" content="#f9f9f9">
-    <!-- Version 3.8.3.6 -->
+    <!-- Version 3.8.3.7 -->
 
   </head>
 
@@ -639,13 +639,21 @@
     </script>
     <script>
       // multi slider functionality 
-      let slideIndex = [1,1,1];
+
+      //the quantity of ones in the slideIndex should reflect the quantity of sliders on the page
+      let slideIndex = [1,1,1,1,1,1];
       /* Class the members of each slideshow group with different CSS classes */
-      let slideId = ["mySlides1", "mySlides2", "mySlides3"];
+
+      //add new slide classes here
+      let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"];
+
+      //show the slides/initiate the sliders, with n=1, and no= the class of the slider in slideId
       showSlides(1, 0);
-      
+      showSludes(1, 1);
       showSlides(1, 2);
-      
+      showSlides(1, 3);
+      showSlides(1, 4);
+      showSlides(1, 5);
 
       function plusSlides(n, no) {
         showSlides(slideIndex[no] += n, no);
