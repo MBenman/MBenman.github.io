@@ -395,11 +395,11 @@ nav ul li {
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {
   display: none;
 }
 
-.mySlides img {
+.mySlides1 img, .mySlides2 img, .mySlides3 img, .mySlides4 img, .mySlides5 img, .mySlides6 img, .mySlides7 img {
   width: 600px;
   max-height: 750px;
   object-fit: contain;
