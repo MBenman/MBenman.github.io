@@ -21,7 +21,7 @@
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="msapplication-config" content="/assets/images/siteContent/browserconfig.xml">
     <meta name="theme-color" content="#f9f9f9">
-    <!-- Version 3.8.2 -->
+    <!-- Version 3.8.3 -->
 
   </head>
 
@@ -508,28 +508,7 @@
           window.addEventListener("load", function(event) {
 
 
-            // multi slider functionality 
-            let slideIndex = [1,1];
-            /* Class the members of each slideshow group with different CSS classes */
-            let slideId = ["mySlides1", "mySlides3"]
-            showSlides(1, 0);
-            showSlides(1, 1);
             
-
-            function plusSlides(n, no) {
-              showSlides(slideIndex[no] += n, no);
-            }
-
-            function showSlides(n, no) {
-              let i;
-              let x = document.getElementsByClassName(slideId[no]);
-              if (n > x.length) {slideIndex[no] = 1}
-              if (n < 1) {slideIndex[no] = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-              }
-              x[slideIndex[no]-1].style.display = "block";
-            } 
 
 
         
@@ -649,6 +628,34 @@
             
           });
       });
+
+
+      window.onload = function() {
+         // multi slider functionality 
+        let slideIndex = [1,1];
+              /* Class the members of each slideshow group with different CSS classes */
+              let slideId = ["mySlides1", "mySlides3"]
+              showSlides(1, 0);
+              showSlides(1, 1);
+              
+
+              function plusSlides(n, no) {
+                showSlides(slideIndex[no] += n, no);
+              }
+
+              function showSlides(n, no) {
+                let i;
+                let x = document.getElementsByClassName(slideId[no]);
+                if (n > x.length) {slideIndex[no] = 1}
+                if (n < 1) {slideIndex[no] = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                x[slideIndex[no]-1].style.display = "block";
+              } 
+                
+           }
+     
       
     </script>
   </body>
