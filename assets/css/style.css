@@ -401,6 +401,8 @@ nav ul li {
 
 .mySlides img {
   width: 600px;
+  max-height: 750px;
+  object-fit: contain;
 }
 
 /* Next & previous buttons */
