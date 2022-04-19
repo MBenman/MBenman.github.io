@@ -1,6 +1,6 @@
 ---
 title: Better Weather
-order: 1
+order: 2
 techs:
     - tech: html/css/js
     - tech: gsap

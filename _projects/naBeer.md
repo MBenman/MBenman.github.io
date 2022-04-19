@@ -1,6 +1,6 @@
 ---
 title: NA Beer
-order: 2
+order: 1
 techs:
     - tech: html/css/js
     - tech: wordpress
