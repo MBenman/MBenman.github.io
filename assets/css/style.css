@@ -194,7 +194,7 @@ nav ul li {
 
 #full_menu li {
   list-style-type: none;
-  padding: .4em 0;
+  padding: .2em 0;
   font-size: 2.3rem;
   transition: transform .25s ease;
   transform-origin: left;
@@ -264,8 +264,8 @@ nav ul li {
 }
 
 .hello  p {
-  font-size: var(--fs-3);
-  line-height: 1.25;
+  font-size: var(--fs-2);
+  line-height: 1.5;
 
 }
 

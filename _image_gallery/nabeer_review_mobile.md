@@ -1,7 +1,7 @@
 ---
 image_path: /assets/images/media/naBeer/nabeer_review_mobile.png
 title: mobile wireframe of na beer website review
-weight: 4
+weight: 6
 size: small
 proj: naBeer
 scale: halfDouble
